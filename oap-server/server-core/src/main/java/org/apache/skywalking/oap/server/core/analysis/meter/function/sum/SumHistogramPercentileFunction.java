@@ -175,6 +175,12 @@ public abstract class SumHistogramPercentileFunction extends Meter implements Ac
                            return Tuple.of(key.substring(0, index), key);
                        } else {
                            return Tuple.of(DEFAULT_GROUP, key);
+                           
+                           
+                           
+                           
+                           
+                           
                        }
                    })
                    .collect(groupingBy(Tuple2::_1, mapping(Tuple2::_2, Collector.of(
